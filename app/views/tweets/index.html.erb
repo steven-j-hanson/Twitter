@@ -1,0 +1,22 @@
+<p>
+  <strong>Title: Challenge</strong>
+</p>
+ 
+<p>
+  <strong>Text:</strong>
+</p>
+ 
+<h2>Add a tweet:</h2>
+<%= @tweets.each do |f| %>
+  <p>
+    <%= f.label :commenter %><br />
+    <%= f.text_field :commenter %>
+  </p>
+  <p>
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

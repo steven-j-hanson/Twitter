@@ -1,10 +1,10 @@
 <h1>Single User Twitter</h1>
 
 <%= form_for @tweet do |f| %>
-  <%= f.text_field :status %>
+  <%= f.text_field :message %>
   <%= f.submit %>
 <% end %>
 
 <% @tweets.each do |tweet| %>
-  <p class = "tweet"> <%= tweet.status %></p>
+  <p class = "tweet"> <%= tweet.message %></p>
 <% end %>

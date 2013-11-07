@@ -1,5 +1,5 @@
 class Tweet < ActiveRecord::Base
-  attr_accessible :status
+  attr_accessible :message
   
-  validate :status, :length => { :maximum => 140, :minimum => 1}
+  validate :message, :length => { :maximum => 140, :minimum => 1}
 end

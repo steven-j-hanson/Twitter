@@ -3,7 +3,8 @@ Twitter::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
-  root :to => 'tweets#index'
+  root :to => 'tweets#index', :via =>:get
+  match '/' => 'tweets#create', :as => 'tweets', :via => :post
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

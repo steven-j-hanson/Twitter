@@ -10,7 +10,7 @@ class TweetsController < ApplicationController
     
     if @tweet.save
       # If our tweet validates, then redirect.
-      redirect_to :action => index
+      redirect_to :action => :index
     else
       @tweets = Tweet.order('id DESC')
       render :action => :index
